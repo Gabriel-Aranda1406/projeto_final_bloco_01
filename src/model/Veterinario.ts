@@ -1,17 +1,17 @@
 import { Produto } from "./Produto";
 
-export class Medicamento extends Produto{
+export class Veterinario extends Produto{
     
     private _remedio: string;
 
 	constructor(id: number, nome: string, tipo: number, preco: number, remedio: string) {
-        super(id, nome, tipo, preco) // Atributos da Classe Produto
+        super(id, nome, tipo, preco) 
 		this._remedio = remedio;
 	}
 
 
     /**
-     * Getter generico
+     * Getter 
      * @return {string}
      */
 	public get remedio(): string {
@@ -19,7 +19,7 @@ export class Medicamento extends Produto{
 	}
 
     /**
-     * Setter generico
+     * Setter 
      * @param {string} value
      */
 	public set remedio(value: string) {

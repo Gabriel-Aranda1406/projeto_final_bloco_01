@@ -83,10 +83,10 @@ export abstract class Produto {
 
         switch (this._tipo) {
             case 1:
-                tipo = "Veterinário"
+                tipo = "Alimentos"
                 break;
             case 2:
-                tipo = "Alimentos"
+                tipo = "Veterinario"
                 break;
         }
 

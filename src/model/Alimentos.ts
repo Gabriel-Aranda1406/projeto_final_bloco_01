@@ -1,17 +1,17 @@
 import { Produto } from "./Produto";
 
-export class Cosmetico extends Produto{
+export class Alimentos extends Produto{
     
     private _racao: string;
 
 	constructor(id: number, nome: string, tipo: number, preco: number, racao: string) {
-        super(id, nome, tipo, preco) // Atributos da Classe Produto
+        super(id, nome, tipo, preco) 
 		this._racao = racao;
 	}
 
 
     /**
-     * Getter fragancia
+     * Getter 
      * @return {string}
      */
 	public get racao(): string {
@@ -19,7 +19,7 @@ export class Cosmetico extends Produto{
 	}
 
     /**
-     * Setter fragancia
+     * Setter 
      * @param {string} value
      */
 	public set racao(value: string) {
